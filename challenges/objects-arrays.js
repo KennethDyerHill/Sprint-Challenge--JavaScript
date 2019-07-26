@@ -83,11 +83,16 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
+graduates.forEach(x => {
+  contactInfo.push(`${x.first_name}, ${x.email}`)
+})
 console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
+const uni = graduates.filter(x => {
+  return (x.university == 'uni');
+});
 console.log(uni);
 
 
