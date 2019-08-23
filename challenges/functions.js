@@ -6,10 +6,10 @@
   * The last parameter accepts a callback 
   * In the body of the function return the callback with the two parameters that you created
 */
-function consume() {
-add = (x + y);
-multiply = (x * y);
-greeting = {firstName, lastName};
+function consume(x, y) {
+  add = (x + y);
+  multiply = (x * y);
+  greeting = {firstName, lastName};
 };
 
 /* Step 2: Create several functions to callback with consume();
