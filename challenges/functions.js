@@ -9,7 +9,7 @@
 function consume(x, y) {
   add = (x + y);
   multiply = (x * y);
-  greeting = {firstName, lastName};
+  greeting = (firstName, lastName);
 };
 
 /* Step 2: Create several functions to callback with consume();
@@ -17,20 +17,20 @@ function consume(x, y) {
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-const add = function(x, y) {
+let add = function(x, y) {
   return (x + y);
 }
-console.log()
+// console.log()
 
-const multiply = function(x, y) {
+let multiply = function(x, y) {
   return (x * y);
 }
-console.log()
+// console.log()
 
 const greeting = function(firstName, lastName) {
   return `Hello ${firstName} ${lastName}, nice to meet you!`;
 }
-console.log();
+// console.log();
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 consume(2,2,add); // 4
 consume(10,16,multiply); // 160
